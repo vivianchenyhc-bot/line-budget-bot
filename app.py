@@ -104,8 +104,9 @@ def handle_image(event):
             reply = f"✅ 記帳成功！\n🏦 {data.get('bank', '未知')}\n💰 NT${data['amount']}\n🏪 {data.get('store') or '未知商店'}\n💳 末四碼：{data.get('card', '')}"
         else:
             reply = "⚠️ 圖片中找不到金額，請確認是刷卡通知截圖"
-    except Exception:
-        reply = "⚠️ 圖片辨識失敗，請重試"
+    except Exception as e:
+        print(f"圖片辨識錯誤: {str(e)}")
+        reply = f"⚠️ 圖片辨識失敗：{str(e)}"
 
     line_bot_api.reply_message(event.reply_token, TextSendMessage(text=reply))
 
