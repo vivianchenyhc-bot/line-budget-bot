@@ -6,7 +6,7 @@ import requests, re
 
 app = Flask(__name__)
 
-CHANNEL_SECRET = "4f5d5dcb18c8002bf86eddc20b90f256"
+CHANNEL_SECRET = "b93724c6fd5dddee1495932a4367a5ce"
 CHANNEL_ACCESS_TOKEN = "GPL9lvUqlBA0IKDRFSAf0fiN9gJX035jQa7FsO8LsFJelISR4vEJAnI7BSeHWHArO9pSkWuKVf+0Fx4bzikxHuwZKWSPrKNcu6M5fwKYoZLw/TIEgbtpWUMicO5+1vo+qIIm+UB64B3GRT6HqYz2lAdB04t89/1O/w1cDnyilFU="
 SHEET_URL = "https://script.google.com/macros/s/AKfycbyl8XUm35tvJbpHrNk9SIwDI1yXgc_37B08GleMdWeJb8ZI8irJMC9s2shyxYpbLbXw/exec"
 
