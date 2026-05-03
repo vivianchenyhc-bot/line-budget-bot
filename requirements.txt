@@ -3,3 +3,4 @@ line-bot-sdk
 requests
 gunicorn
 google-generativeai
+Pillow
