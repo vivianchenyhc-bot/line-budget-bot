@@ -49,7 +49,7 @@ def parse_text(text):
     return result
 
 def analyze_image(image_data):
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     image = Image.open(io.BytesIO(image_data))
     
     prompt = """這是一張銀行刷卡通知截圖，請提取以下資訊並以JSON格式回覆：
